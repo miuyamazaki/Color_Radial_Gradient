@@ -10,13 +10,13 @@ const X_AXIS = 2;
 let b1, b2, c1, c2;
 
 function setup() {
-  createCanvas(710, 400);
+  createCanvas(400, 400);
 
   // Define colors
-  b1 = color(255);
-  b2 = color(0);
-  c1 = color(204, 102, 0);
-  c2 = color(0, 102, 153);
+  b1 = color(1000);
+  b2 = color(200);
+  c1 = color(200,0, 50);
+  c2 = color(300, 200, 100);
 
   noLoop();
 }
@@ -26,8 +26,8 @@ function draw() {
   setGradient(0, 0, width / 2, height, b1, b2, X_AXIS);
   setGradient(width / 2, 0, width / 2, height, b2, b1, X_AXIS);
   // Foreground
-  setGradient(50, 90, 540, 80, c1, c2, Y_AXIS);
-  setGradient(50, 190, 540, 80, c2, c1, X_AXIS);
+  setGradient(0, 90, 800, 80, c1, c2, Y_AXIS);
+  setGradient(0, 190, 800, 80, c2, c1, X_AXIS);
 }
 
 function setGradient(x, y, w, h, c1, c2, axis) {
